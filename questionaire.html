@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Team Player Questionaire</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .question {
+      list-style: none;
+      margin-bottom: 15px;
+    }
+    .opt {
+      width: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Team Player Questionaire</h1>
+      <h5>This questionnaire was developed by Glenn Parker and is found in the following book:<br>
+          Parker, G. M. 1996. Team Players and Teamwork. San Francisco: Jossey-Bass.</h5>
+      <h3>Purpose</h3>
+      <p>The Team-Player Questionnaire will help you identify your
+        style as a team player. The results will lead you to an
+        assessment of your current strengths and provide a basis for a
+        plan to increase your effectiveness as a team player.</p>
+      <p>Teams may use this questionnaire to develop a profile of team strengths and to
+        discuss strategies for increasing team effectiveness. </p>
+      <h3>Directions</h3>
+      <p>First, this is a questionnaire, and, therefore, there are no right or wrong
+        responses. Please answer each item according to how you honestly feel you
+        function now as a team member rather than how you used to be or how you
+        would like to be.</p>
+      <p>You will be asked to complete eighteen sentences. Each sentence has four
+        possible endings. Please rank the endings in the order in which you feel each
+        one applies to you. Place the number <strong>4</strong> next to the ending which is <strong>most</strong>
+        applicable to you and continue down to a <strong>1</strong> next to the ending which is <strong>least</strong>
+        applicable to you. </p>
+      <h5>For example:</h5>
+      <blockquote>
+        <p>As a team member, I am usually most concerned about:
+        <ul style="list-style-type: none;">
+          <li><input type="number" min="1" max="4" value="3" readonly class="opt"></input> a. meeting high ethical standards.</li>
+          <li><input type="number" min="1" max="4" value="4" readonly class="opt"></input> b. reaching our goals.</li>
+          <li><input type="number" min="1" max="4" value="2" readonly class="opt"></input> c. meeting my individual responsibilities.</li>
+          <li><input type="number" min="1" max="4" value="1" readonly class="opt"></input> d. how well we are working together as a group.</li>
+        </ul>
+      </blockquote>
+      <p>Please do not make ties or use 4, 3, 2, or 1 more than once. It is possible that
+        some of the sentences will have two or more endings that apply to you or will
+        have none that applies to you, but you should assume these are your only
+        choices and rank them accordingly. Each set of endings must be ranked 4, 3, 2,
+        and 1. </p>
+      <h3>The Questionaire</h3>
+      <ol>
+        <li>During team meetings, I usually:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="1-a" class="opt"></input> a. provide the team with technical data or information.</li>
+            <li><input type="number" min="1" max="4" step="1" id="1-b" class="opt"></input> b. keep the team focused on our mission or goal.</li>
+            <li><input type="number" min="1" max="4" step="1" id="1-c" class="opt"></input> c. make sure everyone is involved in the discussion.</li>
+            <li><input type="number" min="1" max="4" step="1" id="1-d" class="opt"></input> d. raise questions about our goals or methods.</li>
+          </ul>
+        </li>
+        <li>In relating to the team leader, I:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="2-a" class="opt"></input> a. suggest that our work be goal directed.</li>
+            <li><input type="number" min="1" max="4" step="1" id="2-b" class="opt"></input> b. try to help him or her build a positive team climate.</li>
+            <li><input type="number" min="1" max="4" step="1" id="2-c" class="opt"></input> c. am willing to disagree with him or her when necessary.</li>
+            <li><input type="number" min="1" max="4" step="1" id="2-d" class="opt"></input> d. offer advice based upon my area of expertise. </li>
+          </ul>
+        </li>
+        <li>Under stress, I sometimes:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="3-a" class="opt"></input> a. overuse humor and other tension-reducing devices.</li>
+            <li><input type="number" min="1" max="4" step="1" id="3-b" class="opt"></input> b. am too direct in communicating with other team members.</li>
+            <li><input type="number" min="1" max="4" step="1" id="3-c" class="opt"></input> c. lose patience with the need to get involved in discussions.</li>
+            <li><input type="number" min="1" max="4" step="1" id="3-d" class="opt"></input> d. complain to outsiders about problems facing the team.</li>
+          </ul>
+        </li>
+        <li>When conflicts arise on the team, I usually:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="4-a" class="opt"></input> a. press for an honest discussion of the differences.</li>
+            <li><input type="number" min="1" max="4" step="1" id="4-b" class="opt"></input> b. provide reasons why one side or the other is correct.</li>
+            <li><input type="number" min="1" max="4" step="1" id="4-c" class="opt"></input> c. see the differences as a basis for a possible change in team direction.</li>
+            <li><input type="number" min="1" max="4" step="1" id="4-d" class="opt"></input> d. try to break the tension with a supportive or humorous remark.</li>
+          </ul>
+        </li>
+        <li>Other team members usually see me as:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="5-a" class="opt"></input> a. factual.</li>
+            <li><input type="number" min="1" max="4" step="1" id="5-b" class="opt"></input> b. flexible.</li>
+            <li><input type="number" min="1" max="4" step="1" id="5-c" class="opt"></input> c. encouraging.</li>
+            <li><input type="number" min="1" max="4" step="1" id="5-d" class="opt"></input> d. candid.</li>
+          </ul>
+        </li>
+        <li>At times, I am:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="6-a" class="opt"></input> a. too results oriented.</li>
+            <li><input type="number" min="1" max="4" step="1" id="6-b" class="opt"></input> b. too laid-back.</li>
+            <li><input type="number" min="1" max="4" step="1" id="6-c" class="opt"></input> c. self-righteous.</li>
+            <li><input type="number" min="1" max="4" step="1" id="6-d" class="opt"></input> d. shortsighted.</li>
+          </ul>
+        </li>
+        <li>When things go wrong on the team, I usually:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="7-a" class="opt"></input> a. push for increased emphasis on listening, feedback, and participation.</li>
+            <li><input type="number" min="1" max="4" step="1" id="7-b" class="opt"></input> b. press for a candid discussion of our problems.</li>
+            <li><input type="number" min="1" max="4" step="1" id="7-c" class="opt"></input> c. work hard to provide more and better information.</li>
+            <li><input type="number" min="1" max="4" step="1" id="7-d" class="opt"></input> d. suggest that we revisit out basic mission.</li>
+          </ul>
+        </li>
+        <li>A risky team contribution for me is to:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="8-a" class="opt"></input> a. question some aspect of the team’s work.</li>
+            <li><input type="number" min="1" max="4" step="1" id="8-b" class="opt"></input> b. push the team to set higher performance standards.</li>
+            <li><input type="number" min="1" max="4" step="1" id="8-c" class="opt"></input> c. work outside my defined role or job area.</li>
+            <li><input type="number" min="1" max="4" step="1" id="8-d" class="opt"></input> d. provide other team members with feedback on their behavior as team members.</li>
+          </ul>
+        </li>
+        <li>Sometimes other team members see me as:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="9-a" class="opt"></input> a. a perfectionist.</li>
+            <li><input type="number" min="1" max="4" step="1" id="9-b" class="opt"></input> b. unwilling to reassess the team’s mission or goals.</li>
+            <li><input type="number" min="1" max="4" step="1" id="9-c" class="opt"></input> c. not serious about getting the real job done.</li>
+            <li><input type="number" min="1" max="4" step="1" id="9-d" class="opt"></input> d. a nitpicker.</li>
+          </ul>
+        </li>
+        <li> I believe team problem solving requires:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="10-a" class="opt"></input> a. cooperation by all team members.</li>
+            <li><input type="number" min="1" max="4" step="1" id="10-b" class="opt"></input> b. high-level listening skills.</li>
+            <li><input type="number" min="1" max="4" step="1" id="10-c" class="opt"></input> c. a willingness to ask tough questions.</li>
+            <li><input type="number" min="1" max="4" step="1" id="10-d" class="opt"></input> d. good solid data.</li>
+          </ul>
+        </li>
+        <li> When a new team is forming, I usually:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="11-a" class="opt"></input> a. try to meet and get to know other team members.</li>
+            <li><input type="number" min="1" max="4" step="1" id="11-b" class="opt"></input> b. ask pointed questions about our goals and methods.</li>
+            <li><input type="number" min="1" max="4" step="1" id="11-c" class="opt"></input> c. want to know what is expected of me.</li>
+            <li><input type="number" min="1" max="4" step="1" id="11-d" class="opt"></input> d. seek clarity about our basic mission.</li>
+          </ul>
+        </li>
+        <li> At times, I make other people feel:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="12-a" class="opt"></input> a. dishonest because they are not able to be as confrontational as I am.</li>
+            <li><input type="number" min="1" max="4" step="1" id="12-b" class="opt"></input> b. guilty because they don’t live up to my standards.</li>
+            <li><input type="number" min="1" max="4" step="1" id="12-c" class="opt"></input> c. small-minded because they don’t think long-range.</li>
+            <li><input type="number" min="1" max="4" step="1" id="12-d" class="opt"></input> d. heartless because they don’t care about how people relate to each other.</li>
+          </ul>
+        </li>
+        <li> I believe the role of the team leader is to:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="13-a" class="opt"></input> a. ensure the efficient solution of business problems.</li>
+            <li><input type="number" min="1" max="4" step="1" id="13-b" class="opt"></input> b. help the team establish long-range goals and short-term objectives.</li>
+            <li><input type="number" min="1" max="4" step="1" id="13-c" class="opt"></input> c. create a participatory decision-making climate.</li>
+            <li><input type="number" min="1" max="4" step="1" id="13-d" class="opt"></input> d. bring out diverse ideas and challenge assumptions.</li>
+          </ul>
+        </li>
+        <li> I believe team decisions should be based on:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="14-a" class="opt"></input> a. the team’s mission and goals.</li>
+            <li><input type="number" min="1" max="4" step="1" id="14-b" class="opt"></input> b. a consensus of team members.</li>
+            <li><input type="number" min="1" max="4" step="1" id="14-c" class="opt"></input> c. an open and candid assessment of the issues.</li>
+            <li><input type="number" min="1" max="4" step="1" id="14-d" class="opt"></input> d. the weight of the evidence.</li>
+          </ul>
+        </li>
+        <li> Sometimes I:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="15-a" class="opt"></input> a. see team climate as an end in itself.</li>
+            <li><input type="number" min="1" max="4" step="1" id="15-b" class="opt"></input> b. play the devil’s advocate far too long.</li>
+            <li><input type="number" min="1" max="4" step="1" id="15-c" class="opt"></input> c. fail to see the importance of effective team process.</li>
+            <li><input type="number" min="1" max="4" step="1" id="15-d" class="opt"></input> d. overemphasize strategic issues and minimize short-term task accomplishments.</li>
+          </ul>
+        </li>
+        <li> People have often described me as:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="16-a" class="opt"></input> a. independent.</li>
+            <li><input type="number" min="1" max="4" step="1" id="16-b" class="opt"></input> b. dependable.</li>
+            <li><input type="number" min="1" max="4" step="1" id="16-c" class="opt"></input> c. imaginative.</li>
+            <li><input type="number" min="1" max="4" step="1" id="16-d" class="opt"></input> d. participative.</li>
+          </ul>
+        </li>
+        <li> Most of the time, I am:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="17-a" class="opt"></input> a. responsible and hardworking.</li>
+            <li><input type="number" min="1" max="4" step="1" id="17-b" class="opt"></input> b. committed and flexible.</li>
+            <li><input type="number" min="1" max="4" step="1" id="17-c" class="opt"></input> c. enthusiastic and humorous.</li>
+            <li><input type="number" min="1" max="4" step="1" id="17-d" class="opt"></input> d. honest and authentic.</li>
+          </ul>
+        </li>
+        <li> In relating to other team members, at times I get annoyed because they don’t:
+          <ul class="question">
+            <li><input type="number" min="1" max="4" step="1" id="18-a" class="opt"></input> a. revisit team goals or check progress.</li>
+            <li><input type="number" min="1" max="4" step="1" id="18-b" class="opt"></input> b. see the importance of working well together.</li>
+            <li><input type="number" min="1" max="4" step="1" id="18-c" class="opt"></input> c. object to team action with which they disagree.</li>
+            <li><input type="number" min="1" max="4" step="1" id="18-d" class="opt"></input> d. complete their team assignments on time.</li>
+          </ul>
+        </li>
+      </ol>
+      <br>
+      <p id="error" style="color: red"></p>
+      <button type="button" class="btn btn-lg btn-primary center-block" onclick="submit()">Submit</button>
+      <br><br>
+      <h4>Results</h4>
+      <ul>
+        <li>Contributor: <strong id="results-contributor"></strong></li>
+        <li>Collaborator: <strong id="results-collaborator"></strong></li>
+        <li>Communicator: <strong id="results-communicator"></strong></li>
+        <li>Challenger: <strong id="results-challenger"></strong></li>
+      </ul>
+      <p>The highest number designates your primary team-player style. If your highest
+        numbers are the same or within three points of each other, consider them both
+        as your primary style. The lowest total indicates your least active team-player
+        style. </p>
+      <p>Your primary team-player style defines a set of behaviors that you use most often
+      as a member of a team. It does not mean that it is the only style you use. All of
+      us have the capacity to use any one of the four styles. We simply use one
+      style&mdash;our primary style&mdash;most often.</p>
+      <br>
+      <button type="button" class="btn btn-lg btn-danger center-block" onclick="reset()" style="margin-top: 40px;">Reset</button>
+      <br><br>
+    </div>
+  </div>
+</div>
+<script>
+
+  const OPTS = ['a', 'b', 'c', 'd'];
+  const TYPES = ['contributor', 'collaborator', 'communicator', 'challenger'];
+
+  const ERROR = document.getElementById('error');
+
+  function get_type_from_letter_and_number(letter, number) {
+    return TYPES[(number - 1 + OPTS.indexOf(letter))% 4];
+  }
+
+  function submit() {
+    ERROR.innerHTML = "";
+    var totals = {'contributor' : 0,
+                  'collaborator' : 0,
+                  'communicator' : 0,
+                  'challenger' : 0};
+    var question_totals = 0;
+    var letter, val;
+    for (var num = 1; num <= 1; num++) {
+      for (var i = 0; i < 4; i++) {
+        letter = OPTS[i];
+        val = Number(document.getElementById(num + '-' + letter).value);
+        if (isNaN(val) || (val % 1 != 0)) {
+          ERROR.innerHTML = "There is a problem with an input on Question number " + num + ".";
+          return;
+        }
+        question_totals += val;
+        totals[get_type_from_letter_and_number(letter, num)] += val;
+      }
+      if (question_totals != 10) {
+        ERROR.innerHTML = "The inputs on Question number " + num + " do not contain each of 1, 2, 3, and 4.";
+        return;
+      }
+    }
+
+    for (var i = 0; i < 4; i++) {
+      document.getElementById('results-' + TYPES[i]).innerHTML = totals[TYPES[i]];
+    }
+
+  }
+
+  function reset() {
+    ERROR.innerHTML = "";
+    for (var num = 1; num <= 1; num++) {
+      for (var i = 0; i < 4; i++) {
+        letter = OPTS[i];
+        document.getElementById(num + '-' + letter).value = "";
+      }
+    }
+    for (var i = 0; i < 4; i++) {
+      document.getElementById('results-' + TYPES[i]).innerHTML = "";
+    }
+  }
+</script>
+</body>
+</html>
