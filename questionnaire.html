@@ -249,9 +249,9 @@
                   'collaborator' : 0,
                   'communicator' : 0,
                   'challenger' : 0};
-    var question_totals = 0;
+    var question_totals = [];
     var letter, val;
-    for (var num = 1; num <= 1; num++) {
+    for (var num = 1; num <= 18; num++) {
       for (var i = 0; i < 4; i++) {
         letter = OPTS[i];
         val = Number(document.getElementById(num + '-' + letter).value);
@@ -259,10 +259,10 @@
           ERROR.innerHTML = "There is a problem with an input on Question number " + num + ".";
           return;
         }
-        question_totals += val;
+        question_totals.push(val);
         totals[get_type_from_letter_and_number(letter, num)] += val;
       }
-      if (question_totals != 10) {
+      if (!question_totals.includes(1) || !question_totals.includes(2) || !question_totals.includes(3) || !question_totals.includes(4)) {
         ERROR.innerHTML = "The inputs on Question number " + num + " do not contain each of 1, 2, 3, and 4.";
         return;
       }
@@ -276,7 +276,7 @@
 
   function reset() {
     ERROR.innerHTML = "";
-    for (var num = 1; num <= 1; num++) {
+    for (var num = 1; num <= 18; num++) {
       for (var i = 0; i < 4; i++) {
         letter = OPTS[i];
         document.getElementById(num + '-' + letter).value = "";
